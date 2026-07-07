@@ -1,0 +1,97 @@
+:host {
+    display: block;
+    --azure: #4ca8ff;
+    --indigo: #1e4fd8;
+    --line: rgba(140, 170, 255, 0.14);
+}
+
+.card {
+    width: min(90vw, 440px);
+    padding: 2rem 1.9rem 1.6rem;
+    background: rgba(140, 170, 255, 0.04);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+}
+
+.eyebrow {
+    margin: 0;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--azure);
+}
+
+.title {
+    margin: 0.25rem 0 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #eaf0ff;
+}
+
+.row {
+    display: flex;
+    gap: 0.55rem;
+    margin-bottom: 1.1rem;
+}
+
+.input {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    padding: 0.62rem 0.8rem;
+    color: #eaf0ff;
+    background: rgba(7, 11, 22, 0.6);
+    border: 1px solid var(--line);
+    border-radius: 5.5px;
+    outline: none;
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+
+    &::placeholder {
+        color: #64749e;
+    }
+
+    &:focus {
+        border-color: var(--azure);
+        box-shadow: 0 0 0 3px rgba(76, 168, 255, 0.16);
+    }
+}
+
+.add {
+    font: inherit;
+    font-weight: 600;
+    padding: 0.62rem 1.1rem;
+    color: #fff;
+    background: linear-gradient(120deg, var(--azure), var(--indigo));
+    border: 0;
+    border-radius: 5.5px;
+    cursor: pointer;
+    transition:
+        filter 0.15s ease,
+        transform 0.12s ease;
+
+    &:hover {
+        filter: brightness(1.08);
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer {
+    margin: 1.2rem 0 0;
+    font-size: 0.85rem;
+    color: #8a9ac4;
+    text-align: center;
+}

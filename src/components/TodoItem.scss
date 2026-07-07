@@ -1,0 +1,77 @@
+:host {
+    display: block;
+    --azure: #4ca8ff;
+    --indigo: #1e4fd8;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.6rem 0.7rem;
+    background: rgba(140, 170, 255, 0.05);
+    border: 1px solid rgba(140, 170, 255, 0.1);
+    border-radius: 6px;
+}
+
+.check {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.85rem;
+    color: #fff;
+    background: transparent;
+    border: 1.5px solid rgba(140, 170, 255, 0.35);
+    border-radius: 3.5px;
+    cursor: pointer;
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+
+    &:hover {
+        border-color: var(--azure);
+    }
+}
+
+.text {
+    flex: 1;
+    min-width: 0;
+    font-size: 0.98rem;
+    color: #dfe6fb;
+}
+
+.remove {
+    flex: 0 0 auto;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1.15rem;
+    line-height: 1;
+    color: #64749e;
+    background: transparent;
+    border: 0;
+    border-radius: 3.5px;
+    cursor: pointer;
+    transition:
+        color 0.15s ease,
+        background 0.15s ease;
+
+    &:hover {
+        color: #ff7a93;
+        background: rgba(255, 122, 147, 0.1);
+    }
+}
+
+.is-done .check {
+    color: #fff;
+    background: linear-gradient(120deg, var(--azure), var(--indigo));
+    border-color: transparent;
+    background-clip: padding-box;
+}
+
+.is-done .text {
+    color: #64749e;
+    text-decoration: line-through;
+}
