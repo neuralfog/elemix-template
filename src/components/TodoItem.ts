@@ -1,9 +1,8 @@
 import { Component, tpl } from '@neuralfog/elemix';
 import type { Template } from '@neuralfog/elemix/types';
 
-import css from './TodoItem.scss?inline';
-
-type Todo = { id: string; text: string; done: boolean };
+import css from '#src/components/TodoItem.scss?inline';
+import type { Todo } from '#src/utils/todos';
 
 type Props = {
     todo: Todo;

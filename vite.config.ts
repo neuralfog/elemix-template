@@ -1,6 +1,12 @@
+import { resolve } from 'node:path';
 import { elemix } from '@neuralfog/elemix-vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [elemix()],
+    resolve: {
+        alias: {
+            '#src': resolve(import.meta.dirname, 'src'),
+        },
+    },
 });

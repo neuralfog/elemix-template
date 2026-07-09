@@ -2,27 +2,13 @@ import { Component, ref, tpl } from '@neuralfog/elemix';
 import { repeat } from '@neuralfog/elemix/directives';
 import type { Ref, Template } from '@neuralfog/elemix/types';
 
-import css from './TodoApp.scss?inline';
-import './TodoItem';
-
-type Todo = { id: string; text: string; done: boolean };
+import css from '#src/components/TodoApp.scss?inline';
+import '#src/components/TodoItem';
+import { type Todo, loadTodos, newTodo, saveTodos } from '#src/utils/todos';
 
 type State = {
     draft: Ref<string>;
     todos: Todo[];
-};
-
-const STORAGE_KEY = 'elemix-todos';
-
-const seed = (): Todo[] => [
-    { id: crypto.randomUUID(), text: 'Read the elemix docs', done: true },
-    { id: crypto.randomUUID(), text: 'Scaffold a component', done: false },
-    { id: crypto.randomUUID(), text: 'Ship something', done: false },
-];
-
-const load = (): Todo[] => {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as Todo[]) : seed();
 };
 
 // #component
@@ -33,18 +19,18 @@ export class TodoApp extends Component {
     // #state
     state: State = {
         draft: ref(''),
-        todos: load(),
+        todos: loadTodos(),
     };
 
     // #effect
     persist(): void {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.state.todos));
+        saveTodos(this.state.todos);
     }
 
     add = (): void => {
         const text = this.state.draft.value.trim();
         if (!text) return;
-        this.state.todos.push({ id: crypto.randomUUID(), text, done: false });
+        this.state.todos.push(newTodo(text));
         this.state.draft.value = '';
     };
 
@@ -78,7 +64,7 @@ export class TodoApp extends Component {
                         <todo-item
                             :todo=${todo}
                             :remove=${() => this.removeTodo(todo.id)}
-                        ></todo-item>
+                        />
                     `,
                     (todo) => todo.id,
                 )}
@@ -88,7 +74,7 @@ export class TodoApp extends Component {
                 ${
                     this.state.todos.length
                         ? tpl`${this.state.todos.filter((t) => !t.done).length} of ${this.state.todos.length} left`
-                        : 'Nothing here — add your first todo'
+                        : 'Nothing here - add your first todo'
                 }
             </p>
         </div>

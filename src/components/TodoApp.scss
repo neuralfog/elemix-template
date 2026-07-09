@@ -1,14 +1,11 @@
 :host {
     display: block;
-    --azure: #4ca8ff;
-    --indigo: #1e4fd8;
-    --line: rgba(140, 170, 255, 0.14);
 }
 
 .card {
     width: min(90vw, 440px);
     padding: 2rem 1.9rem 1.6rem;
-    background: rgba(140, 170, 255, 0.04);
+    background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 10px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
@@ -28,7 +25,7 @@
     margin: 0.25rem 0 1.3rem;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #eaf0ff;
+    color: var(--text-strong);
 }
 
 .row {
@@ -42,8 +39,8 @@
     min-width: 0;
     font: inherit;
     padding: 0.62rem 0.8rem;
-    color: #eaf0ff;
-    background: rgba(7, 11, 22, 0.6);
+    color: var(--text-strong);
+    background: color-mix(in srgb, var(--ink) 60%, transparent);
     border: 1px solid var(--line);
     border-radius: 5.5px;
     outline: none;
@@ -52,12 +49,12 @@
         box-shadow 0.15s ease;
 
     &::placeholder {
-        color: #64749e;
+        color: var(--muted);
     }
 
     &:focus {
         border-color: var(--azure);
-        box-shadow: 0 0 0 3px rgba(76, 168, 255, 0.16);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--azure) 16%, transparent);
     }
 }
 

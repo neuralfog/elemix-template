@@ -12,7 +12,10 @@
         "resolveJsonModule": true,
         "useDefineForClassFields": true,
         "noEmit": true,
-        "types": ["vite/client"]
+        "types": ["vite/client"],
+        "paths": {
+            "#src/*": ["./src/*"]
+        }
     },
-    "include": ["src", "vite.config.ts"]
+    "include": ["src"]
 }

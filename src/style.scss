@@ -1,9 +1,27 @@
-$ink: #070b16;
-$text: #e7ecfb;
-$azure: #4ca8ff;
-
 :root {
     color-scheme: dark;
+
+    --ink: #070b16;
+    --text: #e7ecfb;
+    --text-strong: #eaf0ff;
+    --muted: #64749e;
+    --azure: #4ca8ff;
+    --indigo: #1e4fd8;
+    --surface: rgba(140, 170, 255, 0.05);
+    --line: rgba(140, 170, 255, 0.14);
+}
+
+:root[data-theme='light'] {
+    color-scheme: light;
+
+    --ink: #eef2fb;
+    --text: #1b2540;
+    --text-strong: #0b1224;
+    --muted: #6b7899;
+    --azure: #2e6bff;
+    --indigo: #1e4fd8;
+    --surface: rgba(30, 70, 160, 0.06);
+    --line: rgba(30, 70, 160, 0.16);
 }
 
 * {
@@ -21,14 +39,14 @@ body {
     display: grid;
     place-items: center;
     font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    color: $text;
+    color: var(--text);
     background:
         radial-gradient(
             1000px 600px at 50% -10%,
-            rgba($azure, 0.18),
+            color-mix(in srgb, var(--azure) 18%, transparent),
             transparent 60%
         ),
-        $ink;
+        var(--ink);
 }
 
 .app {

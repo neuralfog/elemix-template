@@ -12,6 +12,21 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/src/style.scss" />
+        <script>
+            (() => {
+                try {
+                    const pref =
+                        localStorage.getItem('themePref') || 'system';
+                    const dark = matchMedia(
+                        '(prefers-color-scheme: dark)',
+                    ).matches;
+                    const root = document.documentElement;
+                    root.dataset.themePref = pref;
+                    root.dataset.theme =
+                        pref === 'system' ? (dark ? 'dark' : 'light') : pref;
+                } catch (e) {}
+            })();
+        </script>
     </head>
     <body>
         <main class="app"></main>
