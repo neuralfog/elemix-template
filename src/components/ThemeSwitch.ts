@@ -6,9 +6,9 @@ import '#src/icons/SunIcon';
 import '#src/icons/MoonIcon';
 import '#src/icons/MonitorIcon';
 import {
-    type ThemePref,
     applyTheme,
     storedPref,
+    type ThemePref,
     watchSystemTheme,
 } from '#src/utils/theme';
 
@@ -44,6 +44,7 @@ export class ThemeSwitch extends Component {
                 class="opt ${this.state.pref === 'light' ? 'is-active' : ''}"
                 @click=${() => this.select('light')}
                 aria-label="Light theme"
+                data-testid="theme-light"
             >
                 <icon-sun />
             </button>
@@ -51,6 +52,7 @@ export class ThemeSwitch extends Component {
                 class="opt ${this.state.pref === 'dark' ? 'is-active' : ''}"
                 @click=${() => this.select('dark')}
                 aria-label="Dark theme"
+                data-testid="theme-dark"
             >
                 <icon-moon />
             </button>
@@ -58,6 +60,7 @@ export class ThemeSwitch extends Component {
                 class="opt ${this.state.pref === 'system' ? 'is-active' : ''}"
                 @click=${() => this.select('system')}
                 aria-label="System theme"
+                data-testid="theme-system"
             >
                 <icon-monitor />
             </button>

@@ -1,0 +1,4 @@
+@mixin focus-ring {
+    outline: 1px dashed var(--azure);
+    outline-offset: 0.125rem;
+}

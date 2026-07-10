@@ -1,3 +1,5 @@
+@use '../mixins' as *;
+
 :host {
     display: block;
 }
@@ -71,12 +73,17 @@
         filter 0.15s ease,
         transform 0.12s ease;
 
-    &:hover {
+    &:not(:disabled):hover {
         filter: brightness(1.08);
     }
 
-    &:active {
+    &:not(:disabled):active {
         transform: translateY(1px);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.45;
     }
 }
 
@@ -91,4 +98,8 @@
     font-size: 0.85rem;
     color: #8a9ac4;
     text-align: center;
+}
+
+:focus-visible {
+    @include focus-ring;
 }

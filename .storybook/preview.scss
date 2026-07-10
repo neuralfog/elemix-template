@@ -1,0 +1,31 @@
+#storybook-root {
+    display: block;
+    width: 100%;
+}
+
+[data-story-frame] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+[data-story-box] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 32rem;
+}
+
+[data-story-frame] [data-elemix-root] {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+[data-story-frame] [data-elemix-root] > * {
+    position: static !important;
+    inset: auto !important;
+}

@@ -1,0 +1,64 @@
+@use '../mixins' as *;
+
+:host {
+    display: block;
+    width: 100%;
+}
+
+.icon-gallery-wrap {
+    padding: 1.5rem;
+    color: var(--text);
+}
+
+.icon-search {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    margin-bottom: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text);
+    outline: none;
+
+    &:focus {
+        border-color: var(--azure);
+    }
+
+    &::placeholder {
+        color: var(--muted);
+    }
+}
+
+.icon-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    gap: 0.75rem;
+}
+
+.icon-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 2rem 0.75rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+
+    & > :first-child {
+        display: inline-flex;
+        color: var(--azure);
+        transform: scale(2.4);
+    }
+}
+
+.icon-cell-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+:focus-visible {
+    @include focus-ring;
+}

@@ -14,8 +14,10 @@
         "noEmit": true,
         "types": ["vite/client"],
         "paths": {
-            "#src/*": ["./src/*"]
+            "#src/*": ["./src/*"],
+            "#stories/*": ["./stories/*"],
+            "#storybook/*": ["./.storybook/*"]
         }
     },
-    "include": ["src"]
+    "include": ["src", "stories"]
 }

@@ -20,9 +20,17 @@ export class TodoItem extends Component<Props> {
 
     template = (): Template => tpl`
         <div class="item ${this.props.todo.done ? 'is-done' : ''}">
-            <button class="check" @click=${this.toggle} aria-label="Toggle done">${this.props.todo.done ? '✓' : ''}</button>
+            <button
+                class="check"
+                @click=${this.toggle}
+                aria-label="Toggle done"
+            >${this.props.todo.done ? '✓' : ''}</button>
             <span class="text">${this.props.todo.text}</span>
-            <button class="remove" @click=${this.props.remove} aria-label="Remove">×</button>
+            <button
+                class="remove"
+                @click=${this.props.remove}
+                aria-label="Remove"
+            >×</button>
         </div>
     `;
 }

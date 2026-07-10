@@ -4,7 +4,7 @@ import type { Ref, Template } from '@neuralfog/elemix/types';
 
 import css from '#src/components/TodoApp.scss?inline';
 import '#src/components/TodoItem';
-import { type Todo, loadTodos, newTodo, saveTodos } from '#src/utils/todos';
+import { loadTodos, newTodo, saveTodos, type Todo } from '#src/utils/todos';
 
 type State = {
     draft: Ref<string>;
@@ -43,7 +43,6 @@ export class TodoApp extends Component {
         <div class="card">
             <p class="eyebrow">elemix</p>
             <h1 class="title">Todos</h1>
-
             <div class="row">
                 <input
                     class="input"
@@ -54,9 +53,12 @@ export class TodoApp extends Component {
                         if (e.key === 'Enter') this.add();
                     }}
                 />
-                <button class="add" @click=${this.add}>Add</button>
+                <button
+                    class="add"
+                    disabled=${!this.state.draft.value.trim()}
+                    @click=${this.add}
+                >Add</button>
             </div>
-
             <div class="list">
                 ${repeat(
                     this.state.todos,
@@ -69,11 +71,13 @@ export class TodoApp extends Component {
                     (todo) => todo.id,
                 )}
             </div>
-
             <p class="footer">
                 ${
                     this.state.todos.length
-                        ? tpl`${this.state.todos.filter((t) => !t.done).length} of ${this.state.todos.length} left`
+                        ? tpl`
+                            ${this.state.todos.filter((t) => !t.done).length} of
+                            ${this.state.todos.length} left
+                        `
                         : 'Nothing here - add your first todo'
                 }
             </p>
