@@ -1,7 +1,7 @@
 import { elemixDecorator } from '@neuralfog/elemix-storybook';
 import type { Preview } from '@storybook/html-vite';
 
-import '#src/style.scss';
+import '#src/scss/style.scss';
 import '#storybook/preview.scss';
 import { storyFrame } from '#storybook/storyFrame';
 
