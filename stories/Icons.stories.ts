@@ -58,5 +58,5 @@ const meta: ElemixMeta = {
 export default meta;
 
 export const Gallery: ElemixStory = {
-    render: () => '<icon-gallery></icon-gallery>',
+    render: () => tpl`<icon-gallery />`,
 };

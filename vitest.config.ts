@@ -11,7 +11,9 @@ export default defineConfig({
             '@neuralfog/elemix/runtime',
             '@neuralfog/elemix/directives',
             '@neuralfog/elemix-storybook',
-            'storybook/test',
+            '@neuralfog/elemix-testing-library',
+            '@neuralfog/elemix-testing-library/query',
+            '@neuralfog/elemix-testing-library/events',
         ],
     },
     test: {
