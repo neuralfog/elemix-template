@@ -28,10 +28,12 @@ const todo = (args: Args): Todo => ({
 
 export const Unchecked: ElemixStory<Args> = {
     args: { text: 'Learn Elemix', done: false },
-    render: (args) => tpl`<todo-item :todo=${todo(args)} :remove=${() => {}} />`,
+    render: (args) =>
+        tpl`<todo-item :todo=${todo(args)} :remove=${() => {}} />`,
 };
 
 export const Checked: ElemixStory<Args> = {
     args: { text: 'Ship it', done: true },
-    render: (args) => tpl`<todo-item :todo=${todo(args)} :remove=${() => {}} />`,
+    render: (args) =>
+        tpl`<todo-item :todo=${todo(args)} :remove=${() => {}} />`,
 };

@@ -6,6 +6,9 @@ const config: StorybookConfig = {
     stories: ['../stories/**/*.stories.ts'],
     addons: ['@storybook/addon-vitest'],
     framework: '@storybook/html-vite',
+    staticDirs: ['../public'],
+    managerHead: (head) =>
+        `${head}<link rel="icon" type="image/svg+xml" href="/favicon.svg" />`,
     viteFinal: (cfg) => {
         cfg.plugins = [...(cfg.plugins ?? []), elemix()];
         cfg.resolve = {
