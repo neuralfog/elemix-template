@@ -1,0 +1,5 @@
+[formatter]
+enabled = true           # false turns the formatter off entirely
+indent_style = "space"   # "space" (default) or "tab"
+indent_width = 4         # columns per indent level
+line_width = 80          # max line width

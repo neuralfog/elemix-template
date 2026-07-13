@@ -3,8 +3,8 @@ import { repeat } from '@neuralfog/elemix/directives';
 import type { Ref, Template } from '@neuralfog/elemix/types';
 
 import css from '#src/components/TodoApp.scss?inline';
-import '#src/components/TodoItem';
 import { loadTodos, newTodo, saveTodos, type Todo } from '#src/utils/todos';
+import '#src/components/TodoItem';
 
 type State = {
     draft: Ref<string>;
