@@ -5,22 +5,17 @@
     "license": "MIT",
     "type": "module",
     "imports": {
-        "#src/*": "./src/*",
-        "#stories/*": "./stories/*",
-        "#storybook/*": "./.storybook/*"
+        "#src/*": "./src/*"
     },
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build",
         "typecheck": "tsc --noEmit",
         "lint": "biome check . && pnpm lint:tpl && pnpm typecheck && pnpm lint:analyze",
         "lint:analyze": "ea --dirs src --root .",
         "lint:tpl": "etf --dirs src",
-        "lint:fix": "biome check --write . && etf --dirs src --write",
-        "test": "vitest run"
+        "lint:fix": "biome check --write . && etf --dirs src --write"
     },
     "dependencies": {
         "@neuralfog/elemix": "0.9.1"
@@ -28,19 +23,10 @@
     "devDependencies": {
         "@biomejs/biome": "2.5.3",
         "@neuralfog/elemix-analyzer": "0.9.1",
-        "@neuralfog/elemix-storybook": "0.9.1",
         "@neuralfog/elemix-template-formatter": "0.9.1",
-        "@neuralfog/elemix-testing-library": "0.9.1",
         "@neuralfog/elemix-vite": "0.9.1",
-        "@storybook/addon-vitest": "10.4.6",
-        "@storybook/html-vite": "10.4.6",
-        "@types/node": "26.1.1",
-        "@vitest/browser-playwright": "4.1.10",
-        "playwright": "1.61.1",
         "sass": "1.101.0",
-        "storybook": "10.4.6",
         "typescript": "7.0.2",
-        "vite": "8.1.4",
-        "vitest": "4.1.10"
+        "vite": "8.1.4"
     }
 }
