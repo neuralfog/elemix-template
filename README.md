@@ -11,6 +11,8 @@ A template to help you get started with elemix.
 | `pnpm dev` | Start the Vite dev server with hot module replacement. |
 | `pnpm build` | Compile and bundle for production into `dist/`. |
 | `pnpm preview` | Serve the production build locally to preview it. |
+| `pnpm test` | Run the component tests once in a headless browser (Vitest browser mode). |
+| `pnpm test:ui` | Run the tests in watch mode with the Vitest UI dashboard. |
 | `pnpm typecheck` | Type-check the project with `tsc --noEmit`. |
 | `pnpm lint` | Format-check and lint with Biome, check `tpl` template formatting, type-check, and run the elemix analyzer. |
 | `pnpm lint:analyze` | Run the elemix analyzer over `src/` to validate components and bindings. |
