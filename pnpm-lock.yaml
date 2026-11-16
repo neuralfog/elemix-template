@@ -9,24 +9,24 @@ importers:
   .:
     dependencies:
       '@neuralfog/elemix':
-        specifier: 0.9.6
-        version: 0.9.6
+        specifier: 0.9.7
+        version: 0.9.7
     devDependencies:
       '@biomejs/biome':
         specifier: 2.5.3
         version: 2.5.3
       '@neuralfog/elemix-analyzer':
-        specifier: 0.9.6
-        version: 0.9.6
+        specifier: 0.9.7
+        version: 0.9.7
       '@neuralfog/elemix-template-formatter':
-        specifier: 0.9.6
-        version: 0.9.6
+        specifier: 0.9.7
+        version: 0.9.7
       '@neuralfog/elemix-testing-library':
-        specifier: 0.9.6
-        version: 0.9.6(@neuralfog/elemix@0.9.6)
+        specifier: 0.9.7
+        version: 0.9.7(@neuralfog/elemix@0.9.7)
       '@neuralfog/elemix-vite':
-        specifier: 0.9.6
-        version: 0.9.6(vite@8.3.8(@types/node@26.1.1)(esbuild@0.27.7)(sass@1.101.0))
+        specifier: 0.9.7
+        version: 0.9.7(vite@8.3.8(@types/node@26.1.1)(esbuild@0.27.7)(sass@1.101.0))
       '@vitest/browser-playwright':
         specifier: 5.1.0
         version: 5.1.0(playwright@1.61.1)(vite@8.3.8(@types/node@26.1.1)(esbuild@0.27.7)(sass@1.101.0))(vitest@5.1.0)
@@ -293,120 +293,120 @@ packages:
       '@emnapi/core': ^1.7.1 || 2.0.0-beta.2
       '@emnapi/runtime': ^1.7.1 || 2.0.0-beta.2
 
-  '@neuralfog/elemix-analyzer-darwin-arm64@0.9.6':
-    resolution: {integrity: sha512-DGuZ7UdvS0xnYJXppFxKu0/u4wPNPgiw2wiYS0iXF5/E6cjCAD6s8auYqg9baHrbjIGbQgl0xlBMf/vmzV1fMA==}
+  '@neuralfog/elemix-analyzer-darwin-arm64@0.9.7':
+    resolution: {integrity: sha512-tazR7VhLcztB3DWhs0CdIu2KVHgQHiPcVrhYHAwu3/EjFl+kQkJcJdVl2UOLav0sdVhYB4R8PmgYLXkRI2EPSA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@neuralfog/elemix-analyzer-darwin-x64@0.9.6':
-    resolution: {integrity: sha512-m2aK5R3zl7PYCcdb9a64j7XEOybVKq0Q05pIK6SBrvWMkc1bExE8wHB0n7zTFmL3ye7o2U/q/AOXly49SI9DEg==}
+  '@neuralfog/elemix-analyzer-darwin-x64@0.9.7':
+    resolution: {integrity: sha512-O7twchJVcpMmaRGugPoiI41uq+7ye326btrRJrpXb4EKppaqsNVufXeJV+EIkMpBNS+p/zdKYOVHeEM4sckDKA==}
     cpu: [x64]
     os: [darwin]
 
-  '@neuralfog/elemix-analyzer-linux-arm64@0.9.6':
-    resolution: {integrity: sha512-lYZbYM243qmCtAUHNXe6MXSv6DzNPql+61vYtBlAGcNC8hnL/Blrb4VuFLNP1AgmmiohzuFCHm1T52zRbADqYg==}
+  '@neuralfog/elemix-analyzer-linux-arm64@0.9.7':
+    resolution: {integrity: sha512-tTd0zkow/2X//+qZ3p+cvdNQlAbNBdQoRDot0/2+ByZENPG5y2tpAib+ObxscZgbTxnjAVOH5wz3uNRGEdMV/g==}
     cpu: [arm64]
     os: [linux]
 
-  '@neuralfog/elemix-analyzer-linux-x64@0.9.6':
-    resolution: {integrity: sha512-G9vXv54Gvc4z73UsZuG+Bjf7a5Dl0wX/+mA9jXnQPnJJud48u0iwXtZEth550NXzKS6Kfwq1joKqG+zL8ltLFw==}
+  '@neuralfog/elemix-analyzer-linux-x64@0.9.7':
+    resolution: {integrity: sha512-eBcHxA6m12+qGuBMC4mljx/8Q+RIB+n9f5TxceEwMPFj0gCHUQbeWoHOKGXXDTIMYzWY5dNGYR/x1VC0blLatg==}
     cpu: [x64]
     os: [linux]
 
-  '@neuralfog/elemix-analyzer-win32-arm64@0.9.6':
-    resolution: {integrity: sha512-gFcO+vFYes9MDBW6oxTfRK397McbDjW0WeJk7Gb8yTLaWbvoha/ef1t7Qb63IlcdRoO1finoaKPooahux9gpHw==}
+  '@neuralfog/elemix-analyzer-win32-arm64@0.9.7':
+    resolution: {integrity: sha512-FFbgl2Xgtqtc4YglC5hoZHGPmkcyS7bgwDpIXYF6NniIIaaAvDYoY4MXkaqdliPly1xz0GGlMOLUYpJJ1seEXA==}
     cpu: [arm64]
     os: [win32]
 
-  '@neuralfog/elemix-analyzer-win32-x64@0.9.6':
-    resolution: {integrity: sha512-NynDxhU86fGuxC1aXmP0l1WmCjGz0QlwrJyCUUhNPlNeLXRqCqHVGcycMX9LZJbRGvtKY+9kbKV2X1hqBqOwig==}
+  '@neuralfog/elemix-analyzer-win32-x64@0.9.7':
+    resolution: {integrity: sha512-dV4atl2XcC2HooXg/HRJRs32siLRbbpy6Dcbm1BlnfSMHnxIYNRiGZwRAChypmiu2lk7IQRdt1gB0RLdDK2NCA==}
     cpu: [x64]
     os: [win32]
 
-  '@neuralfog/elemix-analyzer@0.9.6':
-    resolution: {integrity: sha512-RxAaC+7Fskbsf7savzEjBaR79AfoD7smXN/UStnKXHhEtcIoUwXHcvYuXbWAU1LK0oEceFeHJzXyAOF0hDH1Uw==}
+  '@neuralfog/elemix-analyzer@0.9.7':
+    resolution: {integrity: sha512-ef9yYiLMfvufLaYqFAyzGfLMAI3rzgQqNuo2kZiEovn0XjGd4FLJxS9Wgi4zO6J59kGtdxDz7ZbTR9JwoW4kbQ==}
     hasBin: true
 
-  '@neuralfog/elemix-compiler-darwin-arm64@0.9.6':
-    resolution: {integrity: sha512-wfFuWmNSylnNYP48wf3gdtnoNgXsZ3QvQRhX1d8IwxzkVWCTPkmMicYiJPzMVRoU924TK0HnfG4S4KztQbxxkA==}
+  '@neuralfog/elemix-compiler-darwin-arm64@0.9.7':
+    resolution: {integrity: sha512-dSYavj8PvaFSCz2ZgrLDxg5xrXjZSA0jHiZF/C2ssOiyaPjfyA0YfBtW5C00k2xQ6LTy82IR8nGVW1VJmDZ28w==}
     cpu: [arm64]
     os: [darwin]
 
-  '@neuralfog/elemix-compiler-darwin-x64@0.9.6':
-    resolution: {integrity: sha512-/s8qS1aADJiDejL94HnIAZHibZLT93zxMo/LGzZTxUeM+TA7TXzGBgY9Mmf7pbHBhltHjcnfoUbxbS3aWod5og==}
+  '@neuralfog/elemix-compiler-darwin-x64@0.9.7':
+    resolution: {integrity: sha512-CM9vniNdGYujQATHBLfInG0lszIs847bN44lG7FCaOY9EhIDKncaNqwYHORN8P1xDNSlA7obRn0j4IWTd7E7xA==}
     cpu: [x64]
     os: [darwin]
 
-  '@neuralfog/elemix-compiler-linux-arm64@0.9.6':
-    resolution: {integrity: sha512-czS7r3CY2ip9Ha49xO2vW8Myxv6QX5QR6wMYJxXoAwv74MwDnNVTSZE/7RGAQLQI6PjkyrP5r83CsCDkIcfm1w==}
+  '@neuralfog/elemix-compiler-linux-arm64@0.9.7':
+    resolution: {integrity: sha512-+3/MkgTSlYCrmnPVA6tU930FS9riX4MfnQT7glAb98pe3XLDzjV22LSiI8WFHOVji+xrJGml4pdRfYZMdUOY2w==}
     cpu: [arm64]
     os: [linux]
 
-  '@neuralfog/elemix-compiler-linux-x64@0.9.6':
-    resolution: {integrity: sha512-+5F8Z/W/WOxTO3l5/aToAh6C8i5RBTFdYIlKdkvQHb3Yjnao9udzotnMOgcJe7m57GZ2pgKp4TtQpc9lrsAy/A==}
+  '@neuralfog/elemix-compiler-linux-x64@0.9.7':
+    resolution: {integrity: sha512-RVT4AI3SSP/Ebxe0RCN+nnW0I0nJwr5TKJ5YcIaWpCs+IofeBPUOYpAcumQUubxCAeaMSFS5j/u2v8PJGJoZBw==}
     cpu: [x64]
     os: [linux]
 
-  '@neuralfog/elemix-compiler-win32-arm64@0.9.6':
-    resolution: {integrity: sha512-KMmW3UX06gehYAmjHPIuRFV10H5Ow7rCzevuJciJlhu9dEv/LtgRzinYNT5vqV/FL689+lmV3hHTk5MQrj3OCw==}
+  '@neuralfog/elemix-compiler-win32-arm64@0.9.7':
+    resolution: {integrity: sha512-LdvkyuHSNlwLDibqVw634xSDgfr64OSpI2VF0URgeseG0Jjrkm6IHiBksGrpbcoTQKyay1Nw5lOBwjMfrrsCYg==}
     cpu: [arm64]
     os: [win32]
 
-  '@neuralfog/elemix-compiler-win32-x64@0.9.6':
-    resolution: {integrity: sha512-Yu9SbaTie4imktRtQQL0kaaVGa5eurHzKS943LPgJe6ZIMvMPWo9g433KxAVv+lAbrZiFSkdQLoruUIPI7phCA==}
+  '@neuralfog/elemix-compiler-win32-x64@0.9.7':
+    resolution: {integrity: sha512-M92TwF1/6nxfn3g6ms1Mb4WxSBFT2uWTtUiJZmpaxcSI5nqH0v3r0oqSohsJeiUc62JNIfJKyEOYAWsFwuJ/Dg==}
     cpu: [x64]
     os: [win32]
 
-  '@neuralfog/elemix-compiler@0.9.6':
-    resolution: {integrity: sha512-jOk4AxbwNZedBUKx5GZ8ertkrXmUxZ1vXjO4J7NuncvAEGrxNMRR+W90zO7ZUvmtrm3mvv38rCaLah7fs9S1KQ==}
+  '@neuralfog/elemix-compiler@0.9.7':
+    resolution: {integrity: sha512-kkUrkFEjsDQm7oETvSqqTIpZYCV6Sfn1eZ+A2F/mgGaAywEHhYJ+NNko1Ej8Gj04IwwuWS+1Vs1zMWhzvBQihQ==}
     hasBin: true
 
-  '@neuralfog/elemix-template-formatter-darwin-arm64@0.9.6':
-    resolution: {integrity: sha512-QPKgyNhEGTJNhD8KMO0YpvlMHfBV6FCNddp53PE2CxZM2uL5yXxW/1oD09IF6P2gFI8wUo1LWrAZHwc6jcg4mg==}
+  '@neuralfog/elemix-template-formatter-darwin-arm64@0.9.7':
+    resolution: {integrity: sha512-zZvkc0Q3gLMYRn2sqg+0pagiGX73ZT9Jjti08+rTSviZ5uwEwpjjuRhow3yBy3005SioNXyGviTLfkqttqd4mw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@neuralfog/elemix-template-formatter-darwin-x64@0.9.6':
-    resolution: {integrity: sha512-Qupx3tk0SSi4YHD3wwcXU2Bqa4k42NSNpPC4HT6DkYY4pYiJZzXJonuIK8Ax6LsrvMRfc8YeTFKNTJ4vomKZGg==}
+  '@neuralfog/elemix-template-formatter-darwin-x64@0.9.7':
+    resolution: {integrity: sha512-hvaCRxU6FbJZQQwco4gp22s3mE086XqH+9y+iHaZw7Xs5rJvwXeNf94v5rXIDAUUqSDWQFtJgchk82zeIsG1SA==}
     cpu: [x64]
     os: [darwin]
 
-  '@neuralfog/elemix-template-formatter-linux-arm64@0.9.6':
-    resolution: {integrity: sha512-rTKkv/vA/19RJ9CTLR0SNowmSDA7NonkasBrtA5ynB1lAiRjpV5fiL4CuCE33SBPwz5wZDe6Ebdx5zVzQ6B4zg==}
+  '@neuralfog/elemix-template-formatter-linux-arm64@0.9.7':
+    resolution: {integrity: sha512-LxBcFuJ4JJWzKfldrxNvf4ziPxka0+IUhbH8Kv/ik0cqSjHFDRZM3/Qq3xuBxgolUj251A/zxLUnik/OQbsyvQ==}
     cpu: [arm64]
     os: [linux]
 
-  '@neuralfog/elemix-template-formatter-linux-x64@0.9.6':
-    resolution: {integrity: sha512-xGoqW1/2XKqD+tPvvrQKXzhgtJkrKGjqswCqf4KjfXduVFgwQ/31rIVxlRDLiEVqCg2uCM7m7gcDf+rTEo6hCg==}
+  '@neuralfog/elemix-template-formatter-linux-x64@0.9.7':
+    resolution: {integrity: sha512-s/KMfq0U5BAK6FURYzycirvDRcTLmZME5wLvlxs7csNKc4EZlk1S8cu4WvAFuVkAVP8NRxQzjKnazYaSyd7vLA==}
     cpu: [x64]
     os: [linux]
 
-  '@neuralfog/elemix-template-formatter-win32-arm64@0.9.6':
-    resolution: {integrity: sha512-rjPRsNbKM8x+aMhz+J+8F4FRQ+kWt1CH/bFjg1lLrxDQPa6s5DJW8ZN+dVHQogbfXAbC33zcVpYQWDjoBjecZA==}
+  '@neuralfog/elemix-template-formatter-win32-arm64@0.9.7':
+    resolution: {integrity: sha512-U/urVE7Omf9h5c/UCveYe9Fuhjp460Kz4z7x3g4hjtsH9Pi3x3VlnsVUw667FirNsodd5taJjQf3iyTgQbG+sQ==}
     cpu: [arm64]
     os: [win32]
 
-  '@neuralfog/elemix-template-formatter-win32-x64@0.9.6':
-    resolution: {integrity: sha512-dJrSAA4E+xBLPYpQsZGAAroqvTOfEqmEPbL1KHblLpD8URtYAQE+2sUwF5q+7VfwAh23kPh8O6zQA/cQsOsKiA==}
+  '@neuralfog/elemix-template-formatter-win32-x64@0.9.7':
+    resolution: {integrity: sha512-NqhzbekA1KUkp9HLeZ3X5CjyFyFZ2ZPPuO5g/VWkPsq8W6RhY6kPmkciD65u96v58P5P2ZyC9jEWvqO+uHfMGg==}
     cpu: [x64]
     os: [win32]
 
-  '@neuralfog/elemix-template-formatter@0.9.6':
-    resolution: {integrity: sha512-oYPf/nImg7QaQEBhwojcTvPfD7b60Bjhn1qjGJkic8K7QomhAi0tJTzSuYpMzU8B+TVIFmja5KhAQ0ooh3BNGA==}
+  '@neuralfog/elemix-template-formatter@0.9.7':
+    resolution: {integrity: sha512-b9fughiGLAj8Hih0PU5ppuyBjb6JCYqNkQpNRSW1Ql/lvmCavkvTZ6RDRgERpeoqSDL5Jtz3uduJRFu+nkLAoA==}
     hasBin: true
 
-  '@neuralfog/elemix-testing-library@0.9.6':
-    resolution: {integrity: sha512-zQvFn0wsdfMEnnRZmf0trHpgMC+BWz4eF0czEy5Xddb+ScnKHLt8W1Hb29pEffZCckjH3w+txHa0o6yxx41TFQ==}
+  '@neuralfog/elemix-testing-library@0.9.7':
+    resolution: {integrity: sha512-nxTBqqfyV08nZimtrMY4gYJ+aYy2rGiFOyBtaJy6vM2Wd0n02u9QV5OQpIcL+0h54XQ9CmEHgpjk6vY9kNdW2A==}
     peerDependencies:
-      '@neuralfog/elemix': 0.9.6
+      '@neuralfog/elemix': 0.9.7
 
-  '@neuralfog/elemix-vite@0.9.6':
-    resolution: {integrity: sha512-OAj0P7/GGtlK63uQDFiqMqCFMwRr2XurOy6drWCZbtwn9GRxm4Yb2Q7VM6jffY2TcL1WJJTMSmDYiGoB6goYRA==}
+  '@neuralfog/elemix-vite@0.9.7':
+    resolution: {integrity: sha512-qsmbV5wWY/p5/JcWL4mv81BzQ/UhYMdOrEaIVf43PJFzvECuzFKf8ePIXp5ZyOtsagbSxvvllyR2pyr66NeXVQ==}
     peerDependencies:
       vite: '>=5'
 
-  '@neuralfog/elemix@0.9.6':
-    resolution: {integrity: sha512-3JlvIHezMAFHaX12MEfPpbze7KBpKcFdK7+83NyDtjEdFgonBYsbg61EJpLewzX3BikjElO9ltmNr/YZO4qPlw==}
+  '@neuralfog/elemix@0.9.7':
+    resolution: {integrity: sha512-M1DSeWsEdT3XAIPCv0zS1EVG/gyXoeiEUIZT6aB3GI8wisa7+UDM9p+/9zl3eqRkVqpqsY1S2CcvQG6dAHKIvA==}
 
   '@oxc-project/types@0.156.0':
     resolution: {integrity: sha512-1Duyg48TdJNdyhEB8Xn1L36bT9Pv6GUtlKjHxOys8xkaF/rQq3XJE+bAurSK/AgIz5mGFsb77cn9Pb20+WCScw==}
@@ -1282,97 +1282,97 @@ snapshots:
       '@tybys/wasm-util': 0.10.3
     optional: true
 
-  '@neuralfog/elemix-analyzer-darwin-arm64@0.9.6':
+  '@neuralfog/elemix-analyzer-darwin-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-analyzer-darwin-x64@0.9.6':
+  '@neuralfog/elemix-analyzer-darwin-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-analyzer-linux-arm64@0.9.6':
+  '@neuralfog/elemix-analyzer-linux-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-analyzer-linux-x64@0.9.6':
+  '@neuralfog/elemix-analyzer-linux-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-analyzer-win32-arm64@0.9.6':
+  '@neuralfog/elemix-analyzer-win32-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-analyzer-win32-x64@0.9.6':
+  '@neuralfog/elemix-analyzer-win32-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-analyzer@0.9.6':
+  '@neuralfog/elemix-analyzer@0.9.7':
     optionalDependencies:
-      '@neuralfog/elemix-analyzer-darwin-arm64': 0.9.6
-      '@neuralfog/elemix-analyzer-darwin-x64': 0.9.6
-      '@neuralfog/elemix-analyzer-linux-arm64': 0.9.6
-      '@neuralfog/elemix-analyzer-linux-x64': 0.9.6
-      '@neuralfog/elemix-analyzer-win32-arm64': 0.9.6
-      '@neuralfog/elemix-analyzer-win32-x64': 0.9.6
+      '@neuralfog/elemix-analyzer-darwin-arm64': 0.9.7
+      '@neuralfog/elemix-analyzer-darwin-x64': 0.9.7
+      '@neuralfog/elemix-analyzer-linux-arm64': 0.9.7
+      '@neuralfog/elemix-analyzer-linux-x64': 0.9.7
+      '@neuralfog/elemix-analyzer-win32-arm64': 0.9.7
+      '@neuralfog/elemix-analyzer-win32-x64': 0.9.7
 
-  '@neuralfog/elemix-compiler-darwin-arm64@0.9.6':
+  '@neuralfog/elemix-compiler-darwin-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-compiler-darwin-x64@0.9.6':
+  '@neuralfog/elemix-compiler-darwin-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-compiler-linux-arm64@0.9.6':
+  '@neuralfog/elemix-compiler-linux-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-compiler-linux-x64@0.9.6':
+  '@neuralfog/elemix-compiler-linux-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-compiler-win32-arm64@0.9.6':
+  '@neuralfog/elemix-compiler-win32-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-compiler-win32-x64@0.9.6':
+  '@neuralfog/elemix-compiler-win32-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-compiler@0.9.6':
+  '@neuralfog/elemix-compiler@0.9.7':
     optionalDependencies:
-      '@neuralfog/elemix-compiler-darwin-arm64': 0.9.6
-      '@neuralfog/elemix-compiler-darwin-x64': 0.9.6
-      '@neuralfog/elemix-compiler-linux-arm64': 0.9.6
-      '@neuralfog/elemix-compiler-linux-x64': 0.9.6
-      '@neuralfog/elemix-compiler-win32-arm64': 0.9.6
-      '@neuralfog/elemix-compiler-win32-x64': 0.9.6
+      '@neuralfog/elemix-compiler-darwin-arm64': 0.9.7
+      '@neuralfog/elemix-compiler-darwin-x64': 0.9.7
+      '@neuralfog/elemix-compiler-linux-arm64': 0.9.7
+      '@neuralfog/elemix-compiler-linux-x64': 0.9.7
+      '@neuralfog/elemix-compiler-win32-arm64': 0.9.7
+      '@neuralfog/elemix-compiler-win32-x64': 0.9.7
 
-  '@neuralfog/elemix-template-formatter-darwin-arm64@0.9.6':
+  '@neuralfog/elemix-template-formatter-darwin-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-template-formatter-darwin-x64@0.9.6':
+  '@neuralfog/elemix-template-formatter-darwin-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-template-formatter-linux-arm64@0.9.6':
+  '@neuralfog/elemix-template-formatter-linux-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-template-formatter-linux-x64@0.9.6':
+  '@neuralfog/elemix-template-formatter-linux-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-template-formatter-win32-arm64@0.9.6':
+  '@neuralfog/elemix-template-formatter-win32-arm64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-template-formatter-win32-x64@0.9.6':
+  '@neuralfog/elemix-template-formatter-win32-x64@0.9.7':
     optional: true
 
-  '@neuralfog/elemix-template-formatter@0.9.6':
+  '@neuralfog/elemix-template-formatter@0.9.7':
     optionalDependencies:
-      '@neuralfog/elemix-template-formatter-darwin-arm64': 0.9.6
-      '@neuralfog/elemix-template-formatter-darwin-x64': 0.9.6
-      '@neuralfog/elemix-template-formatter-linux-arm64': 0.9.6
-      '@neuralfog/elemix-template-formatter-linux-x64': 0.9.6
-      '@neuralfog/elemix-template-formatter-win32-arm64': 0.9.6
-      '@neuralfog/elemix-template-formatter-win32-x64': 0.9.6
+      '@neuralfog/elemix-template-formatter-darwin-arm64': 0.9.7
+      '@neuralfog/elemix-template-formatter-darwin-x64': 0.9.7
+      '@neuralfog/elemix-template-formatter-linux-arm64': 0.9.7
+      '@neuralfog/elemix-template-formatter-linux-x64': 0.9.7
+      '@neuralfog/elemix-template-formatter-win32-arm64': 0.9.7
+      '@neuralfog/elemix-template-formatter-win32-x64': 0.9.7
 
-  '@neuralfog/elemix-testing-library@0.9.6(@neuralfog/elemix@0.9.6)':
+  '@neuralfog/elemix-testing-library@0.9.7(@neuralfog/elemix@0.9.7)':
     dependencies:
-      '@neuralfog/elemix': 0.9.6
+      '@neuralfog/elemix': 0.9.7
 
-  '@neuralfog/elemix-vite@0.9.6(vite@8.3.8(@types/node@26.1.1)(esbuild@0.27.7)(sass@1.101.0))':
+  '@neuralfog/elemix-vite@0.9.7(vite@8.3.8(@types/node@26.1.1)(esbuild@0.27.7)(sass@1.101.0))':
     dependencies:
-      '@neuralfog/elemix-compiler': 0.9.6
+      '@neuralfog/elemix-compiler': 0.9.7
       vite: 8.3.8(@types/node@26.1.1)(esbuild@0.27.7)(sass@1.101.0)
 
-  '@neuralfog/elemix@0.9.6': {}
+  '@neuralfog/elemix@0.9.7': {}
 
   '@oxc-project/types@0.156.0': {}
 
